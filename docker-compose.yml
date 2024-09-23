@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  games-config:
+    image: bitnami/postgresql
+    ports:
+      - 5433:5433
+    environment:
+      - POSTGRESQL_USERNAME=docker
+      - POSTGRESQL_PASSWORD=docker
+      - POSTGRESQL_DATABASE=games-config
+
